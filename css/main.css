@@ -1,9 +1,9 @@
-ul.rig {
+ul.wrapper {
     list-style: none;
     font-size: 0px;
     margin-left: -2.5%; /* should match li left margin */
 }
-ul.rig li {
+ul.wrapper li {
     display: inline-block;
     padding: 10px;
     margin: 0 0 2.5% 2.5%;
@@ -17,29 +17,29 @@ ul.rig li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-ul.rig li img {
+ul.wrapper li img {
     max-width: 100%;
     height: auto;
     margin: 0 0 10px;
 }
-ul.rig li h3 {
+ul.wrapper li h3 {
     margin: 0 0 5px;
 }
-ul.rig li p {
+ul.wrapper li p {
     font-size: .9em;
     line-height: 1.5em;
     color: #999;
 }
 /* class for 2 columns */
-ul.rig.columns-2 li {
+ul.wrapper.columns-2 li {
     width: 47.5%; /* this value + 2.5 should = 50% */
 }
 /* class for 3 columns */
-ul.rig.columns-3 li {
+ul.wrapper.columns-3 li {
     width: 30.83%; /* this value + 2.5 should = 33% */
 }
 /* class for 4 columns */
-ul.rig.columns-4 li {
+ul.wrapper.columns-4 li {
     width: 22.5%; /* this value + 2.5 should = 25% */
 }
  
@@ -51,10 +51,10 @@ ul.rig.columns-4 li {
     ul.grid-nav li a {
         display: block;
     }
-    ul.rig {
+    ul.wrapper {
         margin-left: 0;
     }
-    ul.rig li {
+    ul.wrapper li {
         width: 100% !important; /* over-ride all li styles */
         margin: 0 0 20px;
     }
