@@ -63,11 +63,11 @@ ul.wrapper.columns-4 li {
 .center {
    width: 500px;
    height: 500px;
-   position: absolute;
+   /*position: absolute;
    left: 50%;
    top: 50%; 
    margin-left: -150px;
-   margin-top: -150px;
+   margin-top: -150px;*/
 }
 .center img {
     max-height: 100%;
