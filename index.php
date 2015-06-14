@@ -25,7 +25,7 @@
                 echo '<ul class="wrapper columns-3">';
                 while($row = $result->fetch_assoc()) {
                     echo '<li>';
-                    echo '<a href="detail.php">';
+                    echo '<a href="detail.php?id='.$row['id'].'">';
                     echo '<img src="./img/'.$row['img'].'"/>';
                     echo '</a>';
                     echo '<h3>' . $row['title'] . '</h3>';
@@ -38,7 +38,6 @@
             }
             $conn->close();
         }
-
     ?>
 </body>
 </html>
