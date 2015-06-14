@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Detail Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
     <?php
@@ -22,7 +23,10 @@
             $result = $conn->query($query);
             $value = $result->fetch_assoc();
             echo '<h1>'.$value['title'].'</h1>';
-            echo '<p>'.$value['title'].'</p>';
+            echo '<div class="center">';
+            echo '<img src="./img/'.$value['img'].'"/>';
+            echo '</div>';
+            echo '<p>'.$value['content'].'</p>';
             $conn->close();
         }
     ?>
