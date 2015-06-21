@@ -20,7 +20,7 @@
             die("Connection failed: " . $conn-> connect_error);
         } else {
             //echo "Connection successfully";
-            $query = "SELECT id,title,description,content,img FROM book";
+            $query = "SELECT id,title,summary,content,img FROM book";
             if ($result = $conn->query($query)) {
                 echo '<ul class="wrapper columns-3">';
                 while($row = $result->fetch_assoc()) {
@@ -29,7 +29,7 @@
                     echo '<img src="./img/'.$row['img'].'"/>';
                     echo '</a>';
                     echo '<h3>' . $row['title'] . '</h3>';
-                    echo '<p>' . $row['description'] . '</p>';
+                    echo '<p>' . $row['summary'] . '</p>';
                     echo '</li>';
                 }
                 echo '</ul>';
