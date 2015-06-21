@@ -26,7 +26,7 @@
             echo '<div class="center">';
             echo '<img src="./img/'.$value['img'].'"/>';
             echo '</div>';
-            echo '<p>'.$value['content'].'</p>';
+            echo '<div>'.$value['content'].'</div>';
             $conn->close();
         }
     ?>
