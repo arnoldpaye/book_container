@@ -19,7 +19,7 @@
             die("Connection failed: " . $conn-> connect_error);
         } else {
             //echo "Connection successfully";
-            $query = "SELECT id,title,summary,content,img FROM book WHERE id =".$_GET['id'];
+            $query = "SELECT id,title,summary,content,img, active FROM book WHERE id =".$_GET['id'];
             $result = $conn->query($query);
             $value = $result->fetch_assoc();
             echo '<h1>'.$value['title'].'</h1>';

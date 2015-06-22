@@ -20,7 +20,7 @@
             die("Connection failed: " . $conn-> connect_error);
         } else {
             //echo "Connection successfully";
-            $query = "SELECT id,title,summary,content,img FROM book";
+            $query = "SELECT id,title,summary,content,img, active FROM book WHERE active";
             if ($result = $conn->query($query)) {
                 echo '<ul class="wrapper columns-3">';
                 while($row = $result->fetch_assoc()) {
